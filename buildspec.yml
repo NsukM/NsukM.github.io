@@ -1,18 +1,34 @@
 version: 0.2
 
+env:
+  variables:
+    STACK_NAME: "nsuku-portfolio"
+    
 phases:
   install:
     runtime-versions:
       nodejs: 18
+      
   pre_build:
     commands:
       - echo Build started on `date`
+      
   build:
     commands:
       - echo Build phase started on `date`
+      
   post_build:
     commands:
       - echo Build completed on `date`
+      - echo Deploying CloudFormation stack
+      - aws cloudformation deploy --template-file cloudformation-template.yaml --stack-name $STACK_NAME --capabilities CAPABILITY_IAM --no-fail-on-empty-changeset
+      - BUCKET_NAME=$(aws cloudformation describe-stacks --stack-name $STACK_NAME --query 'Stacks[0].Outputs[?OutputKey==`S3BucketName`].OutputValue' --output text)
+      - aws s3 sync . s3://$BUCKET_NAME --exclude "*.sh" --exclude "*.yaml" --exclude "*.yml" --exclude "*.pem" --exclude "*.json" --exclude "README.md" --exclude ".git/*" --exclude "scripts/*" --delete
+      - DISTRIBUTION_ID=$(aws cloudformation describe-stacks --stack-name $STACK_NAME --query 'Stacks[0].Outputs[?OutputKey==`DistributionId`].OutputValue' --output text)
+      - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
+      - WEBSITE_URL=$(aws cloudformation describe-stacks --stack-name $STACK_NAME --query 'Stacks[0].Outputs[?OutputKey==`WebsiteURL`].OutputValue' --output text)
+      - echo "Website URL:" $WEBSITE_URL
+      
 artifacts:
   files:
     - '**/*'
