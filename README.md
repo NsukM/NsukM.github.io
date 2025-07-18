@@ -81,10 +81,9 @@ Modify `css/style.css` to:
 ## 🚀 Deployment Options
 
 ### GitHub Pages
-1. Push to GitHub repository
-2. Enable GitHub Pages in repository settings
-3. Select source branch (main/master)
-4. Access via `https://username.github.io/repository-name`
+✅ This portfolio is deployed on GitHub Pages!
+- Live site: [https://nsukm.github.io/](https://nsukm.github.io/)
+- The site is automatically updated when changes are pushed to the `main` branch
 
 ### Netlify
 1. Connect GitHub repository to Netlify
