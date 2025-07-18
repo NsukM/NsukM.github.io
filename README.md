@@ -1,6 +1,8 @@
-# Professional Portfolio Website
+# Nsuku Sambo - Technical Portfolio
 
-A modern, responsive portfolio website showcasing AWS Cloud Support Associate technical competencies.
+## Future Software Innovator | Passionate about Cloud Technology, Innovation, and Problem-Solving
+
+A comprehensive portfolio showcasing my expertise in cloud computing, software development, and infrastructure management. This repository demonstrates my technical capabilities across AWS services, DevOps practices, system administration, and software engineering - designed to highlight my qualifications for roles in AWS software engineering, cloud development, DevOps, and related technical positions.
 
 ## 🌟 Features
 
@@ -102,14 +104,15 @@ Modify `css/style.css` to:
 - **Mobile Friendly**: 100% responsive
 - **Cross-browser**: Chrome, Firefox, Safari, Edge
 
-## 🎯 AWS CSA Alignment
+## 🎯 Technical Focus Areas
 
-This portfolio specifically demonstrates:
-- **Technical Problem-Solving** - Project showcase
-- **System Administration** - Linux and monitoring projects
-- **Networking Knowledge** - Network diagnostic tools
-- **Cloud Computing** - AWS infrastructure projects
-- **Communication Skills** - Clear documentation and presentation
+This portfolio demonstrates expertise in:
+- **Cloud Architecture & AWS** - Infrastructure design, serverless applications, and AWS service implementation
+- **Software Development** - Full-stack development with modern frameworks and languages
+- **DevOps Practices** - CI/CD pipelines, infrastructure as code, and automation
+- **System Administration** - Linux environments, monitoring, and troubleshooting
+- **Networking** - Network architecture, security, and diagnostics
+- **Problem-Solving** - Technical solutions to complex challenges
 
 ## 📈 SEO Optimization
 
