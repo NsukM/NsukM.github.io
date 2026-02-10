@@ -3,42 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nsuku Sambo - AWS Cloud Support Associate Intern</title>
+    <title>Nsuku Sambo - Software Development Engineer Candidate</title>
+    <meta name="description" content="SDE-focused portfolio: problem solving with DSA, clean code, and real-world debugging. Featured projects include DSA Patterns in Java and a Log Analyzer Tool.">
+    <meta property="og:title" content="Nsuku Sambo - Software Development Engineer Candidate">
+    <meta property="og:description" content="SDE-focused portfolio: problem solving with DSA, clean code, and real-world debugging. Featured projects include DSA Patterns in Java and a Log Analyzer Tool.">
+    <meta property="og:url" content="https://nsukm.github.io/">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <h2>Nsuku Sambo</h2>
             </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#practice">Practice</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-main">
                 <div class="hero-image">
-                    <img src="images/profile.jpg" alt="Nsuku Sambo" class="hero-photo">
+                    <img src="images/profile.jpg" alt="Portrait of Nsuku Sambo" class="hero-photo">
                 </div>
                 <div class="hero-text">
                     <h1>Hi, I'm Nsuku</h1>
-                    <h2>AWS Cloud Support Intern</h2>
-                    <p>Computer Engineering Graduate | Passionate about solving complex technical challenges and building scalable cloud solutions</p>
+                    <h2>Software Development Engineer Candidate</h2>
+                    <p>Computer Engineering graduate focused on problem solving, clean code, and debugging real systems. AWS experience supports my distributed systems understanding.</p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn-primary">View Projects</a>
-                        <a href="https://github.com/NsukM/Nsuku-portfolio" class="btn-secondary" target="_blank">
+                        <a href="#projects" class="btn-primary">Featured Projects</a>
+                        <a href="https://github.com/NsukM" class="btn-secondary" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
@@ -47,203 +57,143 @@
         </div>
     </section>
 
-    <!-- About Section with Picture -->
-    <section id="about" class="about">
+    <section id="projects" class="projects section-alt">
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="description">Computer Engineering graduate with a passion for cloud computing and distributed systems. AWS Solutions Associate certified with Developer Associate, AI Practitioner, and Developer Professional certifications in progress.</p>
-                </div>
-                
-                <div class="highlights">
-                    <div class="highlight-item">
-                        <i class="fas fa-cloud"></i>
-                        <h3>Cloud Computing</h3>
-                        <p>AWS services, infrastructure as code, serverless architecture</p>
+            <div class="section-head">
+                <h2>Featured Projects</h2>
+                <p class="section-subtitle">Two focused projects that show how I approach correctness, clarity, and debugging.</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-title">
+                        <h3>DSA Patterns in Java</h3>
+                        <span class="project-badge">Java</span>
                     </div>
-                    <div class="highlight-item">
-                        <i class="fas fa-server"></i>
-                        <h3>System Administration</h3>
-                        <p>Linux administration, monitoring, troubleshooting</p>
+                    <p>Pattern-first solutions with correctness notes and invariants to strengthen interview readiness.</p>
+                    <ul class="project-points">
+                        <li>Two pointers, sliding window, BFS/DFS, and more</li>
+                        <li>Explicit invariants, edge cases, and complexity</li>
+                        <li>Readable, testable, and consistent style</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a href="https://github.com/NsukM/dsa-patterns-java" class="btn-primary" target="_blank" rel="noopener noreferrer">View Repo</a>
                     </div>
-                    <div class="highlight-item">
-                        <i class="fas fa-network-wired"></i>
-                        <h3>Networking</h3>
-                        <p>TCP/IP, DNS, load balancing, network diagnostics</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-title">
+                        <h3>Log Analyzer Tool</h3>
+                        <span class="project-badge">Python</span>
                     </div>
-                </div>
+                    <p>Log parsing and aggregation to surface root causes quickly and support real-world debugging.</p>
+                    <ul class="project-points">
+                        <li>Structured parsing with maps and lists</li>
+                        <li>Aggregation to identify hotspots and trends</li>
+                        <li>Built to answer: “What broke, where, and why?”</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a href="https://github.com/NsukM/log-analyzer-tool" class="btn-primary" target="_blank" rel="noopener noreferrer">View Repo</a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Technical Skills</h2>
+            <div class="section-head">
+                <h2>Skills</h2>
+                <p class="section-subtitle">Core tools and habits I use to build and debug software.</p>
+            </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fab fa-aws"></i> Cloud & AWS</h3>
+                    <h3><i class="fas fa-code"></i> Languages</h3>
                     <ul>
-                        <li>EC2, S3, Lambda, CloudFormation</li>
-                        <li>VPC, Load Balancers, Auto Scaling</li>
-                        <li>CloudWatch, IAM, RDS</li>
-                        <li>Infrastructure as Code</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fab fa-linux"></i> System Administration</h3>
-                    <ul>
-                        <li>Linux (Ubuntu, CentOS)</li>
-                        <li>System Monitoring & Alerting</li>
-                        <li>Log Analysis & Troubleshooting</li>
-                        <li>Backup & Recovery</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming</h3>
-                    <ul>
-                        <li>Python, Bash, Java</li>
+                        <li>Java, Python</li>
                         <li>JavaScript, SQL</li>
-                        <li>REST APIs, Web Development</li>
-                        <li>Automation Scripts</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-network-wired"></i> Networking</h3>
+                    <h3><i class="fas fa-sitemap"></i> DSA / Algorithms</h3>
                     <ul>
-                        <li>TCP/IP, DNS, DHCP</li>
-                        <li>Network Troubleshooting</li>
-                        <li>Load Balancing</li>
-                        <li>Security Groups & NACLs</li>
+                        <li>Patterns and invariants</li>
+                        <li>Time / space reasoning</li>
+                        <li>OOP and clean design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-bug"></i> Debugging</h3>
+                    <ul>
+                        <li>Log analysis and RCA</li>
+                        <li>Edge-case driven testing</li>
+                        <li>Systematic troubleshooting</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-network-wired"></i> Systems</h3>
+                    <ul>
+                        <li>Basic distributed systems concepts</li>
+                        <li>AWS fundamentals (supporting)</li>
+                        <li>Linux fundamentals</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="practice" class="practice section-alt">
         <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>System Monitor Dashboard</h3>
-                    <p>Real-time system monitoring with alerting capabilities. Tracks CPU, memory, disk usage with automated notifications.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Linux</span>
-                        <span>Monitoring</span>
-                    </div>
-                    <a href="https://github.com/NsukM/Nsuku-portfolio/tree/main/linux-admin/system-monitor" class="project-link" target="_blank">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
-                </div>
+            <div class="section-head">
+                <h2>What I'm Practicing Now</h2>
+                <p class="section-subtitle">Focused progression through core DSA topics.</p>
+            </div>
+            <div class="practice-steps">
+                <span>Arrays / Two Pointers</span>
+                <span>Hashing</span>
+                <span>Sliding Window</span>
+                <span>Stacks / Queues</span>
+                <span>Linked Lists</span>
+                <span>Trees</span>
+                <span>Graphs</span>
+            </div>
+        </div>
+    </section>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Network Diagnostic Toolkit</h3>
-                    <p>Comprehensive networking tools including custom ping, traceroute, port scanning, and connectivity testing.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Networking</span>
-                        <span>Troubleshooting</span>
-                    </div>
-                    <a href="https://github.com/NsukM/Nsuku-portfolio/tree/main/networking/diagnostic-tools" class="project-link" target="_blank">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-head">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="description">I’m a Computer Engineering graduate who enjoys building reliable software and explaining why it works. I care about correctness, readable code, and diagnosing failures quickly. My AWS exposure helps me reason about distributed systems, but my focus is software development.</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-globe"></i>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-brain"></i>
+                        <h3>Problem Solving</h3>
+                        <p>Patterns, invariants, and complexity-first thinking</p>
                     </div>
-                    <h3>3-Tier Web Application</h3>
-                    <p>Complete web application with database backend, user authentication, and RESTful API endpoints.</p>
-                    <div class="project-tech">
-                        <span>Flask</span>
-                        <span>SQLite</span>
-                        <span>REST API</span>
+                    <div class="highlight-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Clean Code</h3>
+                        <p>Readable structure, small functions, and clarity</p>
                     </div>
-                    <a href="https://github.com/NsukM/Nsuku-portfolio/tree/main/web-apps/2-tier-app" class="project-link" target="_blank">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fab fa-aws"></i>
+                    <div class="highlight-item">
+                        <i class="fas fa-magnifying-glass"></i>
+                        <h3>Debugging Mindset</h3>
+                        <p>Log-driven analysis and root cause isolation</p>
                     </div>
-                    <h3>AWS Infrastructure Templates</h3>
-                    <p>Production-ready CloudFormation templates for scalable web applications with auto-scaling and load balancing.</p>
-                    <div class="project-tech">
-                        <span>CloudFormation</span>
-                        <span>VPC</span>
-                        <span>Auto Scaling</span>
-                    </div>
-                    <a href="https://github.com/NsukM/Nsuku-portfolio/tree/main/aws-projects/infrastructure" class="project-link" target="_blank">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>System Health Check</h3>
-                    <p>Automated system health monitoring script with comprehensive diagnostics and alerting capabilities.</p>
-                    <div class="project-tech">
-                        <span>Bash</span>
-                        <span>System Admin</span>
-                        <span>Automation</span>
-                    </div>
-                    <a href="https://github.com/NsukM/Nsuku-portfolio/tree/main/troubleshooting/scripts" class="project-link" target="_blank">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2>Certifications & Learning</h2>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fab fa-aws"></i>
-                    </div>
-                    <h3>AWS Solutions Associate</h3>
-                    <p class="cert-status">Certified</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fab fa-aws"></i>
-                    </div>
-                    <h3>Developer Associate</h3>
-                    <p class="cert-status">In Progress</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>AI Practitioner</h3>
-                    <p class="cert-status">In Progress</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
+            <div class="section-head">
+                <h2>Get In Touch</h2>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
@@ -257,7 +207,7 @@
                         <i class="fab fa-linkedin"></i>
                         <div>
                             <h3>LinkedIn</h3>
-                            <p><a href="https://www.linkedin.com/in/nsuku-sambo-268885252" target="_blank">linkedin.com/in/nsuku-sambo-268885252</a></p>
+                            <p><a href="https://www.linkedin.com/in/nsuku-sambo-268885252" target="_blank" rel="noopener noreferrer">linkedin.com/in/nsuku-sambo-268885252</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -271,7 +221,7 @@
                         <i class="fab fa-github"></i>
                         <div>
                             <h3>GitHub</h3>
-                            <p><a href="https://github.com/NsukM/Nsuku-portfolio" target="_blank">github.com/NsukM</a></p>
+                            <p><a href="https://github.com/NsukM" target="_blank" rel="noopener noreferrer">github.com/NsukM</a></p>
                         </div>
                     </div>
                 </div>
@@ -279,10 +229,9 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Nsuku Sambo.</p>
+            <p>&copy; 2026 Nsuku Sambo.</p>
         </div>
     </footer>
 
